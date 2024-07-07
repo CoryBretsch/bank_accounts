@@ -1,0 +1,9 @@
+<h1><%= @customer.name %>'s Accounts </h1>
+
+<% @accounts.each do |account|%>
+<div>
+  <p><h3><%= account.account_type%></h3></p>
+  <p>Balance: $<%= account.balance%></p>
+  <p>Veteran Status Applied: <%= account.has_veteran_status%></p>
+</div>
+<% end %>
