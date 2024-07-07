@@ -1,3 +1,3 @@
 class Customer < ApplicationRecord
-  #has many
+  has_many :accounts
 end

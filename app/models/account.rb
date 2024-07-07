@@ -1,3 +1,3 @@
 class Account < ApplicationRecord
-  #belongs to
+  belongs_to :customer
 end
