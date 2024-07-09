@@ -15,4 +15,13 @@ RSpec.describe 'the customer index page' do
     expect(customer_2.name).to appear_before(customer_1.name)
   end
 
+  it 'can create a new customer' do
+    visit '/customers'
+
+    click_link 'New Customer'
+
+    expect(current_path).to eq('/customers/new')
+
+    fill_in 'Name', with: 
+  end
 end
