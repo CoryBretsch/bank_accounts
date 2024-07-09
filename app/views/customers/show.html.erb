@@ -5,3 +5,7 @@
   <p>Is a Veteran? <%= @customer.is_veteran %>
   <p>Number of accounts: <%= @customer.accounts.count%></p>
 </div>
+
+<div>
+  <%= link_to "/#{@customer.name}'s Accounts", "/customers/#{@customer.id}/accounts" %>
+</div>
