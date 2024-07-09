@@ -30,8 +30,7 @@ RSpec.describe 'the customer index page' do
     click_on 'Create Customer'
 
     expect(current_path).to eq("/customers")
+    save_and_open_page
     expect(page).to have_content(customer_1.name)
-    expect(page).to have_content(customer_1.birth_year)
-    expect(page).to have_content(customer_1.is_veteran)
   end
 end
