@@ -6,10 +6,12 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "/customers", to: "customers#index"
+  get "/customers/new", to: "customers#new"
   get "/customers/:id", to: "customers#show"
   get "/accounts", to: "accounts#index"
   get "/accounts/:id", to: "accounts#show"
   get "/customers/:customer_id/accounts", to: "customer_accounts#index"
+  
 
   # Defines the root path route ("/")
   # root "posts#index"

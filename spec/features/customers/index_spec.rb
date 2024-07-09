@@ -16,12 +16,22 @@ RSpec.describe 'the customer index page' do
   end
 
   it 'can create a new customer' do
+    customer_1 = Customer.create!(name: "Tryntle", birth_year: 1950, is_veteran: true)
     visit '/customers'
 
     click_link 'New Customer'
 
     expect(current_path).to eq('/customers/new')
 
-    fill_in 'Name', with: 
+    fill_in 'Name', with: 'Tryntle'
+    fill_in 'Birth year', with: 1950
+    choose 'customer_is_veteran'
+  
+    click_on 'Create Customer'
+
+    expect(current_path).to eq("/customers")
+    expect(page).to have_content(customer_1.name)
+    expect(page).to have_content(customer_1.birth_year)
+    expect(page).to have_content(customer_1.is_veteran)
   end
 end

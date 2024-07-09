@@ -1,6 +1,10 @@
 <h1> Customers </h1>
 
 <% @customers.each do |customer| %>
-  <div align="left"><%= customer.name %>, created at: <%= customer.created_at %></div>
-  <% end %>
-  
+  <div><%= customer.name %>, created at: <%= customer.created_at %></div>
+<% end %>
+
+<div>
+  <%= link_to 'New Customer', '/customers/new' %>
+
+</div>

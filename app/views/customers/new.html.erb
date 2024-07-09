@@ -1,0 +1,25 @@
+
+<h2>New Customer Form</h2>>
+<div>
+<%= form_with url: "/customers", method: :post, data: { turbo: false } do |form| %>
+  <p>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :birth_year %>
+    <%= form.number_field :birth_year %>
+  </p>
+
+  <p>
+    <%= form.label :is_veteran %>
+    <%= form.radio_button :is_veteran, true, id: 'customer_is_veteran' %> Yes 
+    <%= form.radio_button :is_veteran, false, id: 'customer_not_veteran' %> No
+  </p>
+
+  <p>
+    <%= form.submit 'Create Customer' %>
+  </p>
+<% end %>
+</div>
