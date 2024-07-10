@@ -13,11 +13,12 @@ Things you may want to cover:
 
 * Database creation
 
-  ![Schema Design](file:///Users/corybretsch/Desktop/photo.png)
+<img width="691" alt="photo" src="https://github.com/CoryBretsch/bank_accounts/assets/157531934/24bd6b6b-e4cc-48a8-900a-ab2e679f854f">
 
 * Database initialization
 
 * How to run the test suite
+
 
 * Services (job queues, cache servers, search engines, etc.)
 
