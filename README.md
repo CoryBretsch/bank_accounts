@@ -13,6 +13,8 @@ Things you may want to cover:
 
 * Database creation
 
+  ![Schema Design](file:///Users/corybretsch/Desktop/photo.png)
+
 * Database initialization
 
 * How to run the test suite
