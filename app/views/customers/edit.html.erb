@@ -1,6 +1,6 @@
 <h2>Edit Customer Form</h2>>
 <div>
-<%= form_with url: "/customers/#{@customer.id}", method: :patch, data: { turbo: false } do |form| %>
+<%= form_with model: @customer, url: "/customers/#{@customer.id}", method: :patch, data: { turbo: false } do |form| %>
   <p>
     <%= form.label :name %>
     <%= form.text_field :name %>
